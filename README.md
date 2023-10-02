@@ -3,3 +3,4 @@ Update
 <li>Marthon 0 </li>
 <li>Marathon 1 - 22/09/2023</li>
 <li>Marathon 2 - 27/09/2023</li>
+<li>Marthon 3 - 02/10/2023</li>
