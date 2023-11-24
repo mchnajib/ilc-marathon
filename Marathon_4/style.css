@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px; /* Lebar maksimum form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+article {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+article h2 {
+    color: blue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: #eee;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    /* Tata letak untuk perangkat dengan lebar kurang dari 768px (Mobile) */
+    main {
+        flex-direction: column;
+    }
+
+    article, aside {
+        width: 100%; /* Lebar elemen menjadi penuh ketika di bawah 768px */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* Tata letak untuk perangkat dengan lebar lebih dari 768px (Desktop) */
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    article {
+        width: 48%; /* Lebar artikel kurang dari 50% dari lebar layar */
+    }
+
+    section {
+        max-width: 500px; /* Lebar maksimum form tetap seperti sebelumnya */
+    }
+
+    aside {
+        width: 48%; /* Lebar aside kurang dari 50% dari lebar layar */
+    }
+
+    /* CSS untuk kotak profil di sebelah kanan atas */
+    aside .profile-box {
+        width: 200px;
+        height: 100px;
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
